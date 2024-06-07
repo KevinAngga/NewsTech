@@ -6,6 +6,7 @@ plugins {
 
     id ("kotlin-parcelize")
     id("com.google.devtools.ksp")
+    id ("de.mannodermaus.android-junit5")
 }
 
 android {
@@ -69,7 +70,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
-      implementation("androidx.compose.material:material")
+    implementation("androidx.compose.material:material")
     implementation("androidx.compose.material3:material3-window-size-class")
     implementation("androidx.compose.ui:ui:1.7.0-alpha08")
     implementation("androidx.compose.animation:animation:1.7.0-beta01")
@@ -83,6 +84,18 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+
+    //testing
+    testImplementation ("com.willowtreeapps.assertk:assertk:0.26.1")
+    testImplementation ("io.mockk:mockk:1.12.5")
+    testImplementation ("com.squareup.okhttp3:mockwebserver:4.11.0")
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
+    testImplementation ("app.cash.turbine:turbine:0.7.0")
+
+    testImplementation ("org.junit.jupiter:junit-jupiter-api:5.9.3")
+    testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.9.3")
+    testImplementation ("org.junit.jupiter:junit-jupiter-params:5.9.3")
 
     // Compose Navigation
     implementation("androidx.navigation:navigation-compose:2.7.7")

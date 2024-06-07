@@ -6,4 +6,5 @@ plugins {
 //    id ("org.jetbrains.kotlin.plugin.serialization") version "1.9.10"
     id("org.jetbrains.kotlin.android") version "1.9.23" apply false
     id("com.google.devtools.ksp") version "1.9.23-1.0.20" apply false
+    id ("de.mannodermaus.android-junit5") version "1.9.3.0" apply  false
 }
