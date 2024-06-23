@@ -96,6 +96,7 @@ dependencies {
     testImplementation ("org.junit.jupiter:junit-jupiter-api:5.9.3")
     testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.9.3")
     testImplementation ("org.junit.jupiter:junit-jupiter-params:5.9.3")
+    testImplementation ("androidx.paging:paging-common:3.2.1")
 
     // Compose Navigation
     implementation("androidx.navigation:navigation-compose:2.7.7")

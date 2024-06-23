@@ -1,15 +1,11 @@
 package com.fjr619.newsloc.presentation.detail
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.fjr619.newsloc.domain.model.Article
 import com.fjr619.newsloc.domain.usecase.news.NewsUseCases
 import com.fjr619.newsloc.presentation.common.NewsSnackbarVisual
-import com.fjr619.newsloc.util.composestateevents.consumed
-import com.fjr619.newsloc.util.composestateevents.triggered
 import com.fjr619.newsloc.util.snackbar.SnackbarMessage
-import com.fjr619.newsloc.util.snackbar.UserMessage
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -26,7 +22,7 @@ class DetailViewModel @Inject constructor(
   val viewState = _viewState.asStateFlow()
 
   init {
-    Log.e("TAG", "init detail viewmodel")
+//    Log.e("TAG", "init detail viewmodel")
   }
 
   private suspend fun getBookmarkArticle(article: Article?) {
